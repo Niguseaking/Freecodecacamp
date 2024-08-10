@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Standings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Premier League Standings</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="showSection('overview')">Overview</a></li>
+                        <li><a href="#" onclick="showSection('matches')">Matches</a></li>
+                        <li><a href="#" onclick="showSection('standings')">Standings</a></li>
+                        <li><a href="#" onclick="showSection('players')">Players</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="overview" class="content-section">
+                    <h2>Overview</h2>
+                    <p>Welcome to the Premier League overview.</p>
+                </section>
+                <section id="matches" class="content-section" style="display:none;">
+                    <h2>Matches</h2>
+                    <p>Match information will be displayed here.</p>
+                </section>
+                <section id="standings" class="content-section" style="display:none;">
+                    <h2>Standings</h2>
+                    <table id="standings">
+                        <thead>
+                            <tr>
+                                <th>Club</th>
+                                <th>MP</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>PTS</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamic rows will be added here -->
+                        </tbody>
+                    </table>
+                </section>
+                <section id="players" class="content-section" style="display:none;">
+                    <h2>Players</h2>
+                    <p>Player information will be displayed here.</p>
+                </section>
+            </main>
+            <script src="script.js"></script>
+        </body>
+        </html>
+        
+        <!-- <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('overview')">Overview</a></li>
+                <li><a href="#" onclick="showSection('matches')">Matches</a></li>
+                <li><a href="#" onclick="showSection('standings')">Standings</a></li>
+                <li><a href="#" onclick="showSection('players')">Players</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <section id="overview" class="content-section">
+            <h2>Overview</h2>
+            <p>Welcome to the Premier League overview.</p>
+        </section>
+        <section id="matches" class="content-section" style="display:none;">
+            <h2>Matches</h2>
+            <p>Match information will be displayed here.</p>
+        </section>
+        <section id="standings" class="content-section" style="display:none;">
+            <h2>Standings</h2>
+            <table id="standings">
+                <thead>
+                    <tr>
+                        <th>Club</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>PTS</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="players" class="content-section" style="display:none;">
+            <h2>Players</h2>
+            <p>Player information will be displayed here.</p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

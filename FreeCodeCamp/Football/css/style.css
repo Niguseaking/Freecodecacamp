@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.content-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: red;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: blueviolet;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr {
+    transition: background-color 0.3s;
+}
+
+tr:nth-child(-n+4) {
+    background-color: #c1e1c1; /* Light green for top 4 */
+}
+
+tr:nth-child(5) {
+    background-color: #f7e7a9; /* Light yellow for Europa League */
+}
+
+tr:nth-last-child(-n+3) {
+    background-color: #f2c4c4; /* Light red for relegation */
+}

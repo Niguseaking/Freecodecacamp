@@ -1,0 +1,82 @@
+:root {
+    --sky-color: #87CEEB;
+    --building-color-1: #4D4D4D;
+    --building-color-2: #595959;
+    --building-color-3: #666666;
+    --building-color-4: #737373;
+    --building-color-5: #808080;
+    --building-color-6: #8C8C8C;
+    --window-color: #FFD700;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--sky-color);
+}
+
+.skyline {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.building {
+    width: 100px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.building-1 {
+    height: 300px;
+    background-color: var(--building-color-1);
+}
+
+.building-2 {
+    height: 250px;
+    background-color: var(--building-color-2);
+}
+
+.building-3 {
+    height: 350px;
+    background-color: var(--building-color-3);
+}
+
+.building-4 {
+    height: 200px;
+    background-color: var(--building-color-4);
+    
+}
+
+.building-5 {
+    height: 400px;
+    background-color: var(--building-color-5);
+}
+
+.building-6 {
+    height: 300px;
+    background-color: var(--building-color-6);
+}
+
+.building::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: radial-gradient(circle at 10% 20%, var(--window-color) 2%, transparent 2%), 
+                radial-gradient(circle at 30% 40%, var(--window-color) 2%, transparent 2%), 
+                radial-gradient(circle at 70% 20%, var(--window-color) 2%, transparent 2%), 
+                radial-gradient(circle at 50% 70%, var(--window-color) 2%, transparent 2%);
+    background-size: 25px 25px;
+    pointer-events: none;
+    z-index: 1;
+}
